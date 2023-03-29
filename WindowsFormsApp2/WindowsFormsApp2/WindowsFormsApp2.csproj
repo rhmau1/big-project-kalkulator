@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FullString.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FullString.Designer.cs">
+      <DependentUpon>FullString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FullString.resx">
+      <DependentUpon>FullString.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +102,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Simbol.resx">
+      <DependentUpon>Simbol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StringSimbol.resx">
       <DependentUpon>StringSimbol.cs</DependentUpon>
     </EmbeddedResource>

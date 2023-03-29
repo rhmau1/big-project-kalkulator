@@ -44,5 +44,42 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Simbol form4 = new Simbol();
+            form4.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            FullString form5 = new FullString();
+            form5.Show();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

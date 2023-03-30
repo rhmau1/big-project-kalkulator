@@ -25,14 +25,14 @@ namespace WindowsFormsApp2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Menu form2 = new Menu();
-            form2.Show();
+            Menu formBaru = new Menu();
+            formBaru.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            StrSimbol form3 = new StrSimbol();
-            form3.Show();           
+            StrSimbol formBaru = new StrSimbol();
+            formBaru.Show();           
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -47,14 +47,14 @@ namespace WindowsFormsApp2
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Simbol form4 = new Simbol();
-            form4.Show();
+            Simbol formBaru = new Simbol();
+            formBaru.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            FullString form5 = new FullString();
-            form5.Show();
+            FullString formBaru = new FullString();
+            formBaru.Show();
         }
 
         private void label11_Click(object sender, EventArgs e)
@@ -78,6 +78,39 @@ namespace WindowsFormsApp2
         }
 
         private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ChallengeVer1 formBaru = new ChallengeVer1();
+            formBaru.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ChallengeVer2 formBaru = new ChallengeVer2();
+            formBaru.Show();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Profil formBaru = new Profil();
+            formBaru.Show();
+        }
+
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }

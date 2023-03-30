@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChallengeVer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChallengeVer1.Designer.cs">
+      <DependentUpon>ChallengeVer1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChallengeVer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChallengeVer2.Designer.cs">
+      <DependentUpon>ChallengeVer2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profil.Designer.cs">
+      <DependentUpon>Profil.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,6 +102,12 @@
     <Compile Include="StrSimbol.Designer.cs">
       <DependentUpon>StrSimbol.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChallengeVer1.resx">
+      <DependentUpon>ChallengeVer1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChallengeVer2.resx">
+      <DependentUpon>ChallengeVer2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profil.resx">
+      <DependentUpon>Profil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

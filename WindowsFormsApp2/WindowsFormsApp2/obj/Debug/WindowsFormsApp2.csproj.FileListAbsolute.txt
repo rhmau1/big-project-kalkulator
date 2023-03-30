@@ -28,3 +28,6 @@ C:\Users\hp\source\big-project-kalkulator\WindowsFormsApp2\WindowsFormsApp2\obj\
 C:\Users\hp\source\big-project-kalkulator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe
 C:\Users\hp\source\big-project-kalkulator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\hp\source\big-project-kalkulator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.FullString.resources
+C:\Users\hp\source\big-project-kalkulator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ChallengeVer1.resources
+C:\Users\hp\source\big-project-kalkulator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.ChallengeVer2.resources
+C:\Users\hp\source\big-project-kalkulator\WindowsFormsApp2\WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Profil.resources

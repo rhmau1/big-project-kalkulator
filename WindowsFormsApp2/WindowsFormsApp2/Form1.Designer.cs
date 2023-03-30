@@ -44,22 +44,24 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -94,6 +96,7 @@
             this.button9.TabIndex = 7;
             this.button9.Text = "Keluar";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button8
             // 
@@ -104,6 +107,7 @@
             this.button8.TabIndex = 6;
             this.button8.Text = "Profil";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -236,6 +240,17 @@
             this.panel4.Size = new System.Drawing.Size(219, 130);
             this.panel4.TabIndex = 4;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(4, 37);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(168, 54);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "(Input string  perhitungan \r\nberisi kalimat perhitungan\r\n→ Output)\r\n";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -260,7 +275,8 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.LightGray;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.label13);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.button5);
             this.panel5.Location = new System.Drawing.Point(405, 240);
@@ -271,11 +287,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label9.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label9.Location = new System.Drawing.Point(3, 11);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(124, 23);
+            this.label9.Size = new System.Drawing.Size(133, 23);
             this.label9.TabIndex = 9;
             this.label9.Text = "Challenge2 ver1";
             this.label9.Click += new System.EventHandler(this.label9_Click);
@@ -283,14 +299,14 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Enabled = false;
-            this.button5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button5.ForeColor = System.Drawing.Color.Blue;
             this.button5.Location = new System.Drawing.Point(139, 94);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(58, 23);
             this.button5.TabIndex = 9;
             this.button5.Text = "Coba";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // panel6
             // 
@@ -303,6 +319,16 @@
             this.panel6.Size = new System.Drawing.Size(206, 130);
             this.panel6.TabIndex = 4;
             this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(4, 37);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(168, 54);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "(Input string  perhitungan \r\nberisi angka dan simbol\r\n→ Output)\r\n";
             // 
             // label7
             // 
@@ -328,7 +354,8 @@
             // 
             // panel7
             // 
-            this.panel7.BackColor = System.Drawing.Color.LightGray;
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.label14);
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.button4);
             this.panel7.Location = new System.Drawing.Point(653, 240);
@@ -339,46 +366,25 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label8.Location = new System.Drawing.Point(3, 11);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(127, 23);
+            this.label8.Size = new System.Drawing.Size(133, 23);
             this.label8.TabIndex = 8;
             this.label8.Text = "Challenge2 ver2";
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Enabled = false;
-            this.button4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button4.ForeColor = System.Drawing.Color.Blue;
             this.button4.Location = new System.Drawing.Point(139, 94);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(58, 23);
             this.button4.TabIndex = 8;
             this.button4.Text = "Coba";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(4, 37);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(168, 54);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "(Input string  perhitungan \r\nberisi angka dan simbol\r\n→ Output)\r\n";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(4, 37);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(168, 54);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "(Input string  perhitungan \r\nberisi kalimat perhitungan\r\n→ Output)\r\n";
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // pictureBox2
             // 
@@ -410,6 +416,28 @@
             this.label12.TabIndex = 9;
             this.label12.Text = "NISN: 22177";
             this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(4, 37);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(154, 54);
+            this.label13.TabIndex = 8;
+            this.label13.Text = "(Input angka pertama\r\n → input operasi → input\r\nangka kedua → Output)\r\n";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(4, 37);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(189, 54);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "Pengembangan dari challenge \r\nver1, pada ver2 terdapat \r\nhistory perhitungan";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // Form1
             // 
@@ -485,6 +513,8 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
     }
 }
 
